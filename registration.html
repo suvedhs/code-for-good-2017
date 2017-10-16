@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SEARCH Homless</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+</head>
+
+
+<body>
+	<!--head-->
+	<!--header-->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<a href="index.html"><img src="images/search-header-logo-vert.png" class="img-responsive" alt="f" width="55" height="55"></a>
+				</div>
+				<div class="head-right">
+					<div class="top-nav">
+						<span class="menu"><img src="images/nav-icon.png" alt=""> </span>
+						<ul>
+							<li><a href="index.html"  class="active"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-info-sign"></span>Sign-In</a></li>
+							<li><a href="registration.html"><span class="glyphicon glyphicon-certificate"></span>Register</a></li>
+							<li><a href="galleryPre.html"><span class="glyphicon glyphicon-film"></span>Gallery</a></li>
+							<div class="clearfix"> </div>
+						</ul>
+						<!--script-->
+					<script>
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
+					</script>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+	<!--contact-starts-->
+	<div class="contact">
+		<div class="container">
+			<div class="contact-top heading">
+				<h2>Location</h2>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.865856306182!2d-95.351359!3d29.756918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d73ed6e7be99135!2sSEARCH+Homeless+Services!5e0!3m2!1sen!2sus!4v1507945567001" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="letter">
+		<div class="container">
+			<div class="letter-top heading">
+				<h3>Registion Form</h3>
+				<div class="letter-bottom">
+					<form action="training.html">
+						<input type="text" value="First Name">
+						<input type="text" value="Last Name">
+						<input type="text" value="Age">
+						<input type="text" value="Email">
+						<input type="text" value="Phone number">
+						<h4><b>Preferred contact method</b></h4>
+						<input type="radio" name="contact-method" value="email" checked> Email<br>
+						<input type="radio" name="contact-method" value="phone"> Phone<br>
+						<h4><b>Availibility (Days)</b></h4>
+						<input type="checkbox" name="Days" > Mondays<br>
+						<input type="checkbox" name="Days" > Tuesdays<br>
+						<input type="checkbox" name="Days" > Wednesdays<br>
+						<input type="checkbox" name="Days" > Thursdays<br>
+						<input type="checkbox" name="Days" > Fridays<br>
+						<input type="checkbox" name="Days" > Saturdays<br>
+						<input type="checkbox" name="Days" > Sundays<br>
+						<h4><b>Availibility (Times)</b></h4>
+						<input type="checkbox" name="Days" > Mornings (7:00 am - 12:00 pm)<br>
+						<input type="checkbox" name="Days" > Afternoons (12:00 pm - 5:00 pm)<br>
+						<input type="checkbox" name="Days" > Evenings (5:00 pm - 9:00 pm)<br>
+						<input type="checkbox" name="Days" > All Day (7:00 pm - 5:00 pm)<br>
+						<input type="checkbox" name="Days" > Other<br>
+						<h4><b>New Sign-In Credentials</b></h4>
+						<input type="text" placeholder="Username">
+						<input type="password" placeholder="Password">
+						<div class="submit-btn">
+							<input type="submit" value="SUBMIT">
+						</div>
+					</form>
+					<br><br>
+					<form action="login.html">
+						<input type="submit" value=" Already Registered? Sign in!">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!--contact-end-->
+	<!--footer-starts-->
+	<div class="footer top-line">
+		<div class="container">
+			<div class="footer-top">
+				<a href="index.html"><h3>SEARCH HOMELESS</h3></a>
+				<p>Designed by Team #1</p>
+				<a href="#home" class="scroll"><img src="images/top-arrow.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+	<div class="head">
+		<div class="container">
+			<div class="head-top">
+				<div class="col-md-6 h-left">
+					<!--<h4 class="text-blue index-title">SEARCH HOMELESS</h4>-->
+				</div>
+				<div class="col-md-6 h-right">
+					<ul class="icons">
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+						<li><a href="#"><span class="rss"> </span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
